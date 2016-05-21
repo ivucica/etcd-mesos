@@ -27,4 +27,6 @@ CMD sh -xc '/work/bin/etcd-mesos-scheduler -alsologtostderr=true \
     -admin-port=${PORT0} \
     -driver-port=${PORT1} \
     -artifact-port=${PORT2} \
+    -mesos-authentication-principal=${MESOS_AUTHENTICATION_PRINCIPAL} \
+    -mesos-authentication-secret-file=${MESOS_AUTHENTICATION_SECRET_FILE} \
     -framework-weburi='"${WEBURI}"
